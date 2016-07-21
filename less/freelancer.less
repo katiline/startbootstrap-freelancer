@@ -28,6 +28,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
+h2 {
+	color: #404041;
+}
+
 hr.star-light,
 hr.star-primary {
     padding: 0;
@@ -50,7 +54,7 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-    border-color: white;
+    border-color: @text-body;
 }
 
 hr.star-light:after {
@@ -74,7 +78,7 @@ hr.star-primary:after {
 header {
 	text-align: center;
 	background: @brand-success;
-	color: white;
+	color: @text-body;
 	.container {
 		padding-top: 100px;
 		padding-bottom: 50px;
@@ -156,6 +160,27 @@ header {
 .navbar-default,
 .navbar-inverse {
 	border: none;
+	.navbar-header, .navbar-collapse li {
+    	a:hover,
+    	a:focus,
+    	a:active,
+    	a.active {
+    		color: #f4887f;
+		}
+	}
+	.navbar-collapse {
+		li, li.active {
+			a:hover,
+    		a:focus,
+    		a:active,
+    		a.active {
+				background-color: #e6e7e8;
+			}
+		}
+		li.active a{
+			background-color: #e6e7e8;
+		}
+	}			
 }
 
 section {
@@ -168,7 +193,7 @@ section {
 
 section.success {
 	background: @brand-success;
-	color: white;
+	color: @text-body;
 
     a,
     a:hover,
