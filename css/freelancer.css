@@ -28,8 +28,18 @@ h6 {
 h2 {
   color: #404041;
 }
+section.contact-container {
+	padding: 0;
+}
+section.contact-container h2 {
+	color: white;
+}
+section.contact-container ul {
+	margin-bottom: 0px;
+}
 hr.star-light,
-hr.star-primary {
+hr.star-primary,
+hr.star-footer {
   padding: 0;
   border: none;
   border-top: solid 5px;
@@ -38,7 +48,8 @@ hr.star-primary {
   margin: 25px auto 30px;
 }
 hr.star-light:after,
-hr.star-primary:after {
+hr.star-primary:after,
+hr.star-footer:after {
   content: "\f1d8";
   font-family: FontAwesome;
   display: inline-block;
@@ -50,16 +61,23 @@ hr.star-primary:after {
 hr.star-light {
   border-color: #404041;
 }
-hr.star-light:after {
-  background-color: #e6e7e8;
-  color: white;
-}
 hr.star-primary {
   border-color: #404041;
 }
-hr.star-primary:after {
-  background-color: white;
+hr.star-footer {
+  border-color: white;
+}
+hr.star-light:after {
+  background-color: #fff;
   color: #404041;
+}
+hr.star-primary:after {
+  background-color: #e6e7e8;
+  color: #404041;
+}
+hr.star-footer:after {
+  background-color: #404041;
+  color: #fff;
 }
 .img-centered {
   margin: 0 auto;
@@ -173,6 +191,7 @@ header .intro-text .skills {
 .navbar-default .navbar-collapse li a.active,
 .navbar-inverse .navbar-collapse li a.active,
 .navbar-default .navbar-collapse li.active a.active,
+.navbar-default .navbar-collapse li.active a,
 .navbar-inverse .navbar-collapse li.active a.active {
 	background-color: #e6e7e8;
 	color: #F48980;
@@ -325,7 +344,8 @@ footer {
   color: white;
 }
 footer h3 {
-  margin-bottom: 30px;
+	margin-bottom: 30px;
+	font-size: 3em;
 }
 footer .footer-above {
   padding-top: 50px;
